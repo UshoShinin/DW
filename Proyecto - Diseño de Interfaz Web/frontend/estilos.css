@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: #071a2a;
+}
+/* https://colorhunt.co/palette/141287 */
+header{
+    height: 114px;
+    padding: 0 15%;
+    font-size: 14px;
+    border-bottom: 4px solid #071a2a;
+}
+
+header figure img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 16%;
+    padding-top: 14px;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    padding: 48px 1.5%;
+    transition: 0.5s;
+}
+
+nav input{
+    width: 170px;
+    padding: 8px 8px 8px 40px;
+    background-image: url("../img/iconoBuscar.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 2px solid #071a2a;
+    border-radius: 20px;
+    float: left;
+    margin-left: 6%;
+    margin-top: 40px;
+}
+
+input, a{
+    color: #69779b;
+}
+
+a{
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+#AyudaIngresar li{
+    float:right;
+}
+
+nav ul li:hover{
+    background-color: #c4c7d7;
+}
+
+nav ul li a:hover{
+    color: #071a2a;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+h3{
+    margin:20px 0;
+}
+
+main{
+    width:70%;
+    margin: 0 auto;
+    padding:50px 0;
+}
+
+body{
+    background-color:#f2f6f5;
+}
+
+aside{
+    background-color: #c4c7d7;
+    float:right;
+    margin-left:2%;
+    padding:0 2%;
+    width:25%;
+    
+}
+
+main section{
+    width:68%;
+    float:left;
+    background-color:blue;
+}
+
+figure img{
+    width:100%;
+}
+
+p{
+    margin:5px 0;
+}
+
+article input{
+    padding:5px;
+    letter-spacing: 2px;
+    background-color:#071a2a;
+    color:#f2f6f5;
+}
+
+main section section{
+    width:100%;
+    background-color:yellow;
+}
+
+section article{
+    width:32%;
+    background-color:green;
+    margin:2% auto;
+    /*SE podría poner una clase al atributo de en emdio con un padding de derecha a izquierda pero no me gusta, seguir buscando*/
+    float:left;
+}
+details p{
+    word-wrap: break-word;
+}
