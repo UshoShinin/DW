@@ -21,14 +21,21 @@ header figure img{
     padding-top: 14px;
 }
 
-nav ul li{
-    float: left;
+nav ul li,#AyudaIngresar ul li{
+    display:inline-block;
     list-style: none;
     padding: 48px 1.5%;
     transition: 0.5s;
 }
+nav{
+    float:left;
+}
 
-nav input{
+#AyudaIngresar ul,nav ul{
+    width:150px;
+}
+
+form input{
     width: 170px;
     padding: 8px 8px 8px 40px;
     background-image: url("../img/iconoBuscar.png");
@@ -36,34 +43,46 @@ nav input{
     background-size: contain;
     border: 2px solid #071a2a;
     border-radius: 20px;
-    float: left;
     margin-left: 6%;
     margin-top: 40px;
+}
+header form{
+    float: left;
 }
 
 input, a{
     color: #69779b;
 }
 
-a{
-    text-decoration: none;
-    transition: 0.7s;
-}
-
-#AyudaIngresar li{
+#AyudaIngresar{
     float:right;
 }
-
+/*
 nav ul li:hover{
     background-color: #c4c7d7;
 }
+*/
 
 nav ul li a:hover{
+    background-color: #c4c7d7;
     color: #071a2a;
     text-decoration: underline;
     cursor: pointer;
 }
 
+a{
+    text-decoration: none;
+    transition: 0.7s;
+    display:block;
+}
+
+header nav ul li a{
+    display:block;
+}
+
+ul li#Daleloco{
+    display:block;
+}
 h3{
     margin:20px 0;
 }
@@ -116,8 +135,7 @@ main section section{
 section article{
     width:32%;
     background-color:green;
-    margin:2% auto;
-    /*SE podría poner una clase al atributo de en emdio con un padding de derecha a izquierda pero no me gusta, seguir buscando*/
+    margin:10px 0;
     float:left;
 }
 details p{
