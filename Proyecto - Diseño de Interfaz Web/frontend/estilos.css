@@ -83,12 +83,6 @@ h3{
     margin:20px 0;
 }
 
-main{
-    width:70%;
-    margin: 0 auto;
-    padding:50px 0;
-}
-
 body{
     background-color:#f2f6f5;
 }
@@ -99,11 +93,17 @@ aside{
     margin-left:2%;
     padding:0 2%;
     width:25%;
-    
 }
 
-main section{
-    width:68%;
+
+main section {
+    width:70%;
+    margin: 0 auto;
+    padding:50px 0;
+}
+main section section{
+    width: 651px;
+    padding:0;
     float:left;
 }
 
@@ -122,20 +122,38 @@ article input{
     color:#f2f6f5;
 }
 
-main section section{
+main section section section section{
     width:100%;
+    margin-bottom:10px;
 }
 
-section article{
+main section section article{
     width:32%;
-    margin:10px 0;
     float:left;
 }
+
+section aside article{
+    width:100%;
+    margin-bottom:30px;
+    float:none;
+}
+
 details p{
     word-wrap: break-word;
 }
 
 .ElDeEnMedio{
-    margin:10px 12px;
+    margin:0 13px;
     
+}
+main section section section footer{
+    background-color: #c4c7d7;
+    text-align:right;
+    clear: both;
+    padding:3px 15px;
+    letter-spacing: 1px;
+}
+#Pepe{
+    height:200px;
+    background-color:red;
 }
