@@ -5,63 +5,61 @@
     font-family: Quicksand, sans-serif;
 }
 
-body {
+body { 
     background-color: #f2f6f5;
     color: #071a2a;
 }
 
-main { 
+main { /* Definición del tamaño del login y posicionamiento del mismo dentro de la página */
     width: 400px;
-    margin: 0 auto;
-    margin-top: 180px;
+    margin: 180px auto;
     padding: 30px 60px;
     border-radius: 5px;
     text-align: center;
     background-color: #c4c7d7;
 }
 
+
+/* 1 - Parte superior del Login */
+/* Tamaños y tipos de letras */
 h1 {
     font-family: Quicksand-Bold, sans-serif;
     font-size: 28px;
-}
-
-p {
-    margin: 16px 0;
 }
 
 p, label {
     font-size: 14px;
 }
 
-li p {
-    margin-bottom: 4px;
+/* Posicionamiento y tamaño */
+p {
+    margin: 8px 0 4px 0;
 }
 
 figure {
     text-align: center;
     margin-top: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 40px;
 }
 
 img {
     width: 120px;
 }
 
+
+/* 2 - Formulario de Login */
 form {
     width: 296px;
     margin: 0 auto;
-    overflow: auto;
 }
 
-ul {
-    list-style: none;
-}
-
+/* Estilos de los elementos del formulario */
 input[type=text] {
     text-align: center;
     border: 2px solid #071a2a;
     border-radius: 20px;
     padding: 4px 80px;
+    margin: 4px 0 18px 0;
 }
 
 input[type=button] { 
@@ -73,16 +71,16 @@ input[type=button] {
     transition: 0.3s;
 }
 
-input[type=button]:hover { 
-    background-color: #f2f6f5;
-    color: #071a2a;
-}
-
 input[type=checkbox], input[type=button], label {
     cursor: pointer;
 }
 
-label { /* Alinea el checkbox con el resto del formulario */
+#checkbox { /* Alinea el checkbox con el resto del formulario */
     float: left;
-    margin-top: 15px;
+}
+
+input[type=button]:hover { /* Cuando se para sobre el botón, cambia los colores con una transición */
+    background-color: #f2f6f5;
+    color: #071a2a;
+    clear: both;
 }
