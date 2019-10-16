@@ -73,7 +73,12 @@ header nav ul li a{
     transition: 0.5s;
 }
 
-h3{
+h1{
+    font-size:35px;
+}
+
+h2{
+    font-size:20px;
     margin:20px 0;
 }
 
@@ -108,30 +113,27 @@ main section {
     width:70%;
     margin: 0 auto;
     padding:50px 0;
+    overflow:auto;
 }
-main section section{
+main section section {
     width: 69%;
     padding:0;
     float:left;
 }
-main section section section{
-    width:100%;
-    margin-bottom:46px;
-}
 
-main section section section section{
+main section section section{
     width:100%;
     margin-bottom:10px;
 }
 
-main section section article{
+main section article{
     width:32%;
     float:left;
 }
 
 section aside article{
     width:100%;
-    margin-bottom:30px;
+    margin-bottom:20px;
     float:none;
 }
 
@@ -140,14 +142,14 @@ details p{
 }
 
 .ElDeEnMedio{
-    margin:0 2%;
+    margin:0 2% 5% 2%;
     
 }
-main section section section footer{
+main section section footer{
     background-color: #c4c7d7;
     text-align:right;
     clear: both;
-    padding:3px 15px;
+    padding:5px 15px;
     letter-spacing: 1px;
 }
 
@@ -156,5 +158,5 @@ main #Noticias{
     background-color:#dde1e7;
     overflow: auto;
     padding:3% 15%;
-    margin
+    margin:20px;
 }
