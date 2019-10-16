@@ -75,6 +75,7 @@ header nav ul li a{
 
 h1{
     font-size:35px;
+    margin-bottom:3%;
 }
 
 h2{
@@ -100,6 +101,7 @@ figure img{
 
 p{
     margin:5px 0;
+    word-wrap: break-word;
 }
 
 article input{
@@ -137,9 +139,6 @@ section aside article{
     float:none;
 }
 
-details p{
-    word-wrap: break-word;
-}
 
 .ElDeEnMedio{
     margin:0 2% 5% 2%;
@@ -154,9 +153,22 @@ main section section footer{
 }
 
 main #Noticias{
-    width:100%;
     background-color:#dde1e7;
     overflow: auto;
     padding:3% 15%;
-    margin:20px;
 }
+main #Noticias figure{
+    float:left;
+    width:300px;
+}
+
+main #Noticias article{
+    width:120px;
+    float:left;
+    margin:0 30px 0 15px;
+}
+
+main #Noticias #UltimoArticulo{
+    margin:0 0 0 15px;
+}
+
