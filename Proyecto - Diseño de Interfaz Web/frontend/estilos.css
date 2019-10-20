@@ -73,14 +73,25 @@ header nav ul li a{
     transition: 0.5s;
 }
 
+h1,h2,h3{
+    font-family: Quicksand-Bold, sans-serif;
+}
+
 h1{
-    font-size:35px;
-    margin-bottom:3%;
+    font-size:30px;
+    margin-bottom:2%;
+    text-transform: uppercase;
+    
 }
 
 h2{
     font-size:20px;
-    margin:20px 0;
+    margin:4.5% 0;
+}
+
+h3{
+    word-wrap: break-word;
+    font-size:18px;
 }
 
 body{
@@ -104,7 +115,7 @@ p{
     word-wrap: break-word;
 }
 
-article input{
+article input,#Suscribite form input{
     padding:5px;
     letter-spacing: 2px;
     background-color:#071a2a;
@@ -121,6 +132,7 @@ main section section {
     width: 69%;
     padding:0;
     float:left;
+    margin-bottom:3.5%;
 }
 
 main section section section{
@@ -155,20 +167,42 @@ main section section footer{
 main #Noticias{
     background-color:#dde1e7;
     overflow: auto;
-    padding:3% 15%;
+    padding:2% 15% 5% 15%;
 }
 main #Noticias figure{
     float:left;
-    width:300px;
+    width:31.77%;
 }
 
 main #Noticias article{
-    width:120px;
+    width:15.885%;
     float:left;
-    margin:0 30px 0 15px;
+    margin-left:1.5%;
 }
 
-main #Noticias #UltimoArticulo{
-    margin:0 0 0 15px;
+main #Noticias #UltimaFoto,main #Noticias #UltimoArticulo{
+    float:right;
+}
+#Ayuda{
+    width:20%;
+    height:20%;
+    float:left;
+    margin-left:15%;
+}
+#Ayuda h2{
+    font-size:18px;
+    margin-top:6%;
+}
+#Ayuda h3{
+    font-size:16px;
+}
+#Ayuda ul li{
+    margin-top:8%;
+}
+#Suscribite{
+    width:29.41%;
+    height:20%;
+    float:right;
+    margin-right:20%;
 }
 
