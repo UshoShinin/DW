@@ -1,3 +1,4 @@
+/*General*/
 *{
     margin: 0;
     padding: 0;
@@ -37,7 +38,7 @@ nav{
     width:170px;
 }
 
-form input{
+header form input{
     width: 170px;
     padding: 8px 8px 8px 40px;
     background-image: url("../img/iconoBuscar.png");
@@ -115,11 +116,12 @@ p{
     word-wrap: break-word;
 }
 
-article input,#Suscribite form input{
+article input,#Suscribite form input[type=button]{
     padding:5px;
     letter-spacing: 2px;
     background-color:#071a2a;
     color:#f2f6f5;
+    text-transform:uppercase;
 }
 
 main section {
@@ -140,9 +142,10 @@ main section section section{
     margin-bottom:10px;
 }
 
-main section article{
+main section section article{
     width:32%;
     float:left;
+    margin-bottom:5%;
 }
 
 section aside article{
