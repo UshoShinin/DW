@@ -117,7 +117,7 @@ p{
 }
 
 article input,#Suscribite form input[type=button]{
-    padding:5px;
+    padding:7px;
     letter-spacing: 2px;
     background-color:#071a2a;
     color:#f2f6f5;
@@ -209,3 +209,10 @@ main #Noticias #UltimaFoto,main #Noticias #UltimoArticulo{
     margin-right:20%;
 }
 
+#Suscribite form input[type=text]{
+    padding:5px;
+    border:2px solid #071a2a;
+    width:80%;
+    display:block;
+    margin: 5.5% 0 5% 0;
+}
