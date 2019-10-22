@@ -1,3 +1,4 @@
+/* 1 - Estilos generales */
 * {
     padding: 0;
     margin: 0;
@@ -10,7 +11,37 @@ body {
     color: #071a2a;
 }
 
-main { /* Definición del tamaño del login y posicionamiento del mismo dentro de la página */
+h1 {
+    font-family: Quicksand-Bold, sans-serif;
+    font-size: 28px;
+}
+
+p, label, a {
+    font-size: 14px;
+}
+
+input[type=button] {
+    background-color: #071a2a;
+    color: #f2f6f5;
+    margin-top: 15px;
+    border: 2px solid #071a2a;
+    transition: 0.3s;
+}
+
+input[type=button]:hover { /* Cuando se para sobre el botón, cambia los colores con una transición */
+    background-color: #f2f6f5;
+    color: #828588;            
+}
+
+input[type=checkbox], input[type=button], label {
+    cursor: pointer;
+}
+
+
+
+/* 2 - Estilos login.html */
+/* Definiciones de tamaño y posicionamiento dentro de la página */
+#mainLogin { 
     width: 400px;
     margin: 180px auto;
     padding: 30px 60px;
@@ -19,38 +50,26 @@ main { /* Definición del tamaño del login y posicionamiento del mismo dentro d
     background-color: #c4c7d7;
 }
 
-
-/* 1 - Parte superior del Login */
-/* Tamaños y tipos de letras */
-h1 {
-    font-family: Quicksand-Bold, sans-serif;
-    font-size: 28px;
-}
-
-p, label {
-    font-size: 14px;
-}
-
-/* Posicionamiento y tamaño */
-p {
-    margin: 8px 0 4px 0;
-}
-
-figure {
-    text-align: center;
+#figureLogin { 
+    margin: 0 auto; /* Preguntar al profe */
     margin-top: 16px;
     margin-bottom: 40px;
-}
-
-img {
     width: 120px;
+    height: 120px;
 }
 
+#logoLogin {
+    width: 100%;
+    height: 100%;
+}
 
-/* 2 - Formulario de Login */
-form {
+#formLogin {
     width: 296px;
     margin: 0 auto;
+}
+
+#pLogin {
+    margin: 8px 0 4px 0;
 }
 
 /* Estilos de los elementos del formulario */
@@ -62,25 +81,80 @@ input[type=text] {
     margin: 4px 0 18px 0;
 }
 
-input[type=button] { 
-    background-color: #071a2a;
-    color: #f2f6f5;
+#btnIngresarLogin { 
     padding: 4px 114px;
-    margin-top: 20px;
-    border: 2px solid #071a2a;
-    transition: 0.3s;
+    clear: both;
 }
 
-input[type=checkbox], input[type=button], label {
-    cursor: pointer;
+#checkboxLogin { /* Alinea el checkbox con el resto del formulario */
+    float: left;        
 }
 
-#checkbox { /* Alinea el checkbox con el resto del formulario */
+
+
+/* 3 - Estilos listado.html */
+header{
+    padding: 2% 2% 0 2%;
+    border-bottom: 8px solid #071a2a;
+    overflow: auto;
+}
+
+header figure{
+    width: 100px;
+    height: 100px;
     float: left;
 }
 
-input[type=button]:hover { /* Cuando se para sobre el botón, cambia los colores con una transición */
-    background-color: #f2f6f5;
-    color: #071a2a;
-    clear: both;
+header figure img{
+    width: 100%;
+    height: 100%;
 }
+
+header input, header p{
+    float: right;    
+}
+
+header p{
+    margin-top: 34px;
+    margin-right: 10px;
+}
+
+header input[type=button] {
+    background-color: #071a2a;
+    color: #f2f6f5;
+    padding: 4px 20px;
+    margin-top: 30px;
+    border: 2px solid #071a2a;
+    transition: 0.3s;    
+}
+
+nav {
+    width: 15%;
+    background-color: lightgreen;
+    padding-top: 6px;
+    height: 100%;
+    position: fixed;
+}
+
+nav ul li a {
+    padding: 15px 0 15px 25px;
+    background-color: royalblue;
+    display: block;
+    text-decoration: none;   
+    color: black;
+    margin-bottom: 6px;
+    transition: 0.4s; 
+}
+
+nav ul li a:hover{
+    background-color: chocolate;
+}
+
+nav ul li .active {
+    background-color: chocolate;
+}
+/* 
+
+background-color: #c4c7d7; color hover en elemento del nav
+background-color: #dde1e7; color de fondo del nav
+*/
