@@ -12,26 +12,247 @@
 </head>
 
 <body>
-    <main>
-        <header>            
-            <figure>
-                <img src="../img/logo2.png">
-            </figure>
-            <input type="button" value="SALIR">
-            <p>Hola, <strong>Nombre de Usuario</strong></p>
-        </header>
+    <header>
+        <figure>
+            <img src="../img/logo2.png">
+        </figure>
+        <form action="index.html">
+            <input type="submit" value="SALIR">
+        </form>
+        <p>Hola, <strong>Nombre de Usuario</strong></p>
+    </header>
 
-        <nav>
+    <nav>
+        <ul>
+            <li><a href="#">DASHBOARD</a></li> <!-- Preguntar al profe si poner uppercase en todos los casos -->
+            <li><a href="crearEvento.html">CREAR EVENTO</a></li>
+            <li><a href="#" class="active">LISTADO DE EVENTOS</a></li>
+            <li><a href="#">REPORTES</a></li>
+            <li><a href="#">DESTACADOS</a></li>
+            <li><a href="#">AGENTES DE VENTA</a></li>
             <ul>
-                <li><a href="#">DASHBOARD</a></li>
-                <li><a href="crearEvento.html">CREAR EVENTO</a></li>
-                <li><a href="#" class="active">LISTADO DE EVENTOS</a></li>
-                <li><a href="#">REPORTES</a></li>
-                <li><a href="#">DESTACADOS</a></li>
-                <li><a href="#">AGENTES DE VENTA</a></li>                
-            <ul>
-        </nav>        
-        
+    </nav>
+
+    <main>
+        <p>Administrador > Listado de Eventos</p>
+        <h1>LISTADO DE EVENTOS</h1>
+        <form action="crearEvento.html">
+            <input type="submit" value="AGREGAR EVENTOS">
+        </form>
+        <form id="filtrador">
+            <input type="text" placeholder="FILTRAR">
+        </form>
+
+        <table>
+            <tbody>
+                <tr>
+                   <th>Código</th> 
+                   <th>Nombre del evento</th> 
+                   <th>Organizador</th> 
+                   <th>Lugar</th> 
+                   <th>Día</th> 
+                   <th>Hora</th> 
+                   <th>Precio (desde)</th> 
+                </tr>
+
+                <tr>
+                    <td>00000</td>
+                    <td>Evento 1</td>
+                    <td>Organizador 1</td>
+                    <td>Lugar 1</td>
+                    <td>00/00/00</td>
+                    <td>00:00 hs</td>
+                    <td>$ 000</td>
+                    <td>
+                        <img src="../img/editar.png">
+                        <img src="../img/duplicar.png">
+                        <img src="../img/eliminar.png">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td>00000</td>
+                    <td>Evento 1</td>
+                    <td>Organizador 1</td>
+                    <td>Lugar 1</td>
+                    <td>00/00/00</td>
+                    <td>00:00 hs</td>
+                    <td>$ 000</td>
+                    <td>
+                        <img src="../img/editar.png">
+                        <img src="../img/duplicar.png">
+                        <img src="../img/eliminar.png">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>00000</td>
+                    <td>Evento 1</td>
+                    <td>Organizador 1</td>
+                    <td>Lugar 1</td>
+                    <td>00/00/00</td>
+                    <td>00:00 hs</td>
+                    <td>$ 000</td>
+                    <td>
+                        <img src="../img/editar.png">
+                        <img src="../img/duplicar.png">
+                        <img src="../img/eliminar.png">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>00000</td>
+                    <td>Evento 1</td>
+                    <td>Organizador 1</td>
+                    <td>Lugar 1</td>
+                    <td>00/00/00</td>
+                    <td>00:00 hs</td>
+                    <td>$ 000</td>
+                    <td>
+                        <img src="../img/editar.png">
+                        <img src="../img/duplicar.png">
+                        <img src="../img/eliminar.png">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>00000</td>
+                    <td>Evento 1</td>
+                    <td>Organizador 1</td>
+                    <td>Lugar 1</td>
+                    <td>00/00/00</td>
+                    <td>00:00 hs</td>
+                    <td>$ 000</td>
+                    <td>
+                        <img src="../img/editar.png">
+                        <img src="../img/duplicar.png">
+                        <img src="../img/eliminar.png">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>00000</td>
+                    <td>Evento 1</td>
+                    <td>Organizador 1</td>
+                    <td>Lugar 1</td>
+                    <td>00/00/00</td>
+                    <td>00:00 hs</td>
+                    <td>$ 000</td>
+                    <td>
+                        <img src="../img/editar.png">
+                        <img src="../img/duplicar.png">
+                        <img src="../img/eliminar.png">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>00000</td>
+                    <td>Evento 1</td>
+                    <td>Organizador 1</td>
+                    <td>Lugar 1</td>
+                    <td>00/00/00</td>
+                    <td>00:00 hs</td>
+                    <td>$ 000</td>
+                    <td>
+                        <img src="../img/editar.png">
+                        <img src="../img/duplicar.png">
+                        <img src="../img/eliminar.png">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>00000</td>
+                    <td>Evento 1</td>
+                    <td>Organizador 1</td>
+                    <td>Lugar 1</td>
+                    <td>00/00/00</td>
+                    <td>00:00 hs</td>
+                    <td>$ 000</td>
+                    <td>
+                        <img src="../img/editar.png">
+                        <img src="../img/duplicar.png">
+                        <img src="../img/eliminar.png">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>00000</td>
+                    <td>Evento 1</td>
+                    <td>Organizador 1</td>
+                    <td>Lugar 1</td>
+                    <td>00/00/00</td>
+                    <td>00:00 hs</td>
+                    <td>$ 000</td>
+                    <td>
+                        <img src="../img/editar.png">
+                        <img src="../img/duplicar.png">
+                        <img src="../img/eliminar.png">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>00000</td>
+                    <td>Evento 1</td>
+                    <td>Organizador 1</td>
+                    <td>Lugar 1</td>
+                    <td>00/00/00</td>
+                    <td>00:00 hs</td>
+                    <td>$ 000</td>
+                    <td>
+                        <img src="../img/editar.png">
+                        <img src="../img/duplicar.png">
+                        <img src="../img/eliminar.png">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>00000</td>
+                    <td>Evento 1</td>
+                    <td>Organizador 1</td>
+                    <td>Lugar 1</td>
+                    <td>00/00/00</td>
+                    <td>00:00 hs</td>
+                    <td>$ 000</td>
+                    <td>
+                        <img src="../img/editar.png">
+                        <img src="../img/duplicar.png">
+                        <img src="../img/eliminar.png">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>00000</td>
+                    <td>Evento 1</td>
+                    <td>Organizador 1</td>
+                    <td>Lugar 1</td>
+                    <td>00/00/00</td>
+                    <td>00:00 hs</td>
+                    <td>$ 000</td>
+                    <td>
+                        <img src="../img/editar.png">
+                        <img src="../img/duplicar.png">
+                        <img src="../img/eliminar.png">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>00000</td>
+                    <td>Evento 1</td>
+                    <td>Organizador 1</td>
+                    <td>Lugar 1</td>
+                    <td>00/00/00</td>
+                    <td>00:00 hs</td>
+                    <td>$ 000</td>
+                    <td>
+                        <img src="../img/editar.png">
+                        <img src="../img/duplicar.png">
+                        <img src="../img/eliminar.png">
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>        
+
     </main>
 </body>
 

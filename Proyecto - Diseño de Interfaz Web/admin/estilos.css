@@ -28,12 +28,12 @@ input[type=button] {
     transition: 0.3s;
 }
 
-input[type=button]:hover { /* Cuando se para sobre el botón, cambia los colores con una transición */
+input[type=button]:hover, input[type=submit]:hover { /* Cuando se para sobre el botón, cambia los colores con una transición */
     background-color: #f2f6f5;
     color: #828588;            
 }
 
-input[type=checkbox], input[type=button], label {
+input[type=checkbox], input[type=button], input[type=submit], label {
     cursor: pointer;
 }
 
@@ -92,7 +92,7 @@ input[type=text] {
 
 
 
-/* 3 - Estilos listado.html */
+/* 3 - Estilos en comun de listado.html y crear.html */
 header{
     padding: 2% 2% 0 2%;
     border-bottom: 8px solid #071a2a;
@@ -119,26 +119,30 @@ header p{
     margin-right: 10px;
 }
 
-header input[type=button] {
+input[type=submit] {
     background-color: #071a2a;
     color: #f2f6f5;
     padding: 4px 20px;
-    margin-top: 30px;
     border: 2px solid #071a2a;
-    transition: 0.3s;    
+    transition: 0.3s; 
+    letter-spacing: 4px;   
+}
+
+header input[type=submit]{
+    margin-top: 30px;
 }
 
 nav {
     width: 15%;
-    background-color: lightgreen;
+    background-color: #dde1e7;
     padding-top: 6px;
     height: 100%;
-    position: fixed;
+    position: absolute;
 }
 
 nav ul li a {
     padding: 15px 0 15px 25px;
-    background-color: royalblue;
+    background-color: #e8ecee;
     display: block;
     text-decoration: none;   
     color: black;
@@ -147,14 +151,62 @@ nav ul li a {
 }
 
 nav ul li a:hover{
-    background-color: chocolate;
+    background-color: #c4c7d7;
 }
 
 nav ul li .active {
-    background-color: chocolate;
+    background-color: #c4c7d7;
 }
-/* 
 
+main {
+    padding-left: 17%;
+    padding-top: 2%;
+    padding-right: 2%;
+}
+
+main h1{
+    margin: 12px 0;
+}
+
+
+
+/*4 - Estilos de listado.html*/
+main #filtrador{
+    overflow: auto;
+}
+
+main #filtrador input[type=text]{
+    width: 180px;
+    padding: 8px 20px 8px 16px;
+    background-image: url("../img/iconoBuscar.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 2px solid #071a2a;
+    border-radius: 20px;    
+    text-align: center;
+    float: right;
+}
+
+table{
+    width: 100%;
+}
+
+table th{
+    font-size: 18px;
+}
+
+table tr{
+    height: 50px;
+}
+
+table td{
+    text-align: center;
+    font-size: 14px;
+}
+
+/*Preguntar al profe por el boton del formulario */
+
+/* 
 background-color: #c4c7d7; color hover en elemento del nav
 background-color: #dde1e7; color de fondo del nav
 */
