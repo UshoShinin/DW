@@ -73,12 +73,19 @@ input[type=checkbox], input[type=button], input[type=submit], label {
 }
 
 /* Estilos de los elementos del formulario */
-input[type=text] {
+#Buscador {
     text-align: center;
     border: 2px solid #071a2a;
     border-radius: 20px;
     padding: 4px 80px;
     margin: 4px 0 18px 0;
+}
+
+input[type="text"],select {
+    border: 2px solid #071a2a;
+    padding:6px;
+    width:90%;
+    margin-bottom:6%;
 }
 
 #btnIngresarLogin { 
@@ -90,6 +97,11 @@ input[type=text] {
     float: left;        
 }
 
+
+fieldset form{
+    width:30%;
+    padding-top:1.5%;
+}
 
 
 /* 3 - Estilos en comun de listado.html y crear.html */

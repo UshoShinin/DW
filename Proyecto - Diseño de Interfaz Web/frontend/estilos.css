@@ -4,74 +4,12 @@
     padding: 0;
     border: 0;
     font-family: 'Quicksand', sans-serif;
+    
+}
+
+body{
+    background-color:#f2f6f5;
     color: #071a2a;
-}
-/* https://colorhunt.co/palette/141287 */
-header{
-    height: 114px;
-    padding: 0 15%;
-    font-size: 14px;
-    border-bottom: 4px solid #071a2a;
-}
-
-header figure img{
-    width: 100px;
-    height: 100px;
-    float: left;
-    margin-right: 16%;
-    padding-top: 14px;
-}
-
-nav ul li,#AyudaIngresar ul li{
-    display:inline-block;
-    list-style: none;
-    width:80px;
-    text-align:center;
-    margin:0;
-    padding:0;
-}
-nav{
-    float:left;
-}
-
-#AyudaIngresar ul,nav ul{
-    width:170px;
-}
-
-header form input{
-    width: 170px;
-    padding: 8px 8px 8px 40px;
-    background-image: url("../img/iconoBuscar.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: 2px solid #071a2a;
-    border-radius: 20px;
-    margin-left: 6%;
-    margin-top: 40px;
-}
-header form{
-    float: left;
-}
-
-input, a{
-    color: #69779b;
-}
-
-#AyudaIngresar{
-    float:right;
-}
-
-nav ul li a:hover{
-    background-color: #c4c7d7;
-    color: #071a2a;
-    text-decoration: underline;
-}
-
-header nav ul li a{
-    display:block;
-    padding: 48px 1.5%;
-    text-decoration:none;
-    transition: 0.5s;
 }
 
 h1,h2,h3{
@@ -95,41 +33,98 @@ h3{
     font-size:18px;
 }
 
-body{
-    background-color:#f2f6f5;
-}
-
-aside{
-    background-color: #c4c7d7;
-    float:right;
-    /*margin-left:2%;*/
-    padding:10px 2%;
-    width:25%;
+p{
+    margin:5px 0;
+    word-wrap: break-word;
 }
 
 figure img{
     width:100%;
 }
 
-p{
-    margin:5px 0;
-    word-wrap: break-word;
+/*Header*/
+header{
+    height: 114px;
+    padding: 0 15%;
+    font-size: 14px;
+    border-bottom: 4px solid #071a2a;
+}
+header figure img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 16%;
+    padding-top: 14px;
 }
 
-article input,#Suscribite form input[type=button]{
-    padding:7px;
-    letter-spacing: 2px;
-    background-color:#071a2a;
-    color:#f2f6f5;
-    text-transform:uppercase;
+nav{
+    float:left;
 }
 
+#AyudaIngresar{
+    float:right;
+}
+
+#AyudaIngresar ul,nav ul{
+    width:170px;
+}
+
+nav ul li,#AyudaIngresar ul li{
+    display:inline-block;
+    list-style: none;
+    width:80px;
+    text-align:center;
+    margin:0;
+    padding:0;
+}
+
+header nav ul li a{
+    display:block;
+    padding: 48px 1.5%;
+    text-decoration:none;
+    transition: 0.5s;
+    color: #69779b;
+}
+
+nav ul li a:hover{
+    background-color: #c4c7d7;
+    color: #071a2a;
+}
+
+header form{
+    float: left;
+}
+
+header form input{
+    width: 170px;
+    padding: 8px 8px 8px 40px;
+    background-image: url("../img/iconoBuscar.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 2px solid #071a2a;
+    border-radius: 20px;
+    margin-left: 6%;
+    margin-top: 40px;
+    color: #69779b;
+}
+
+/*Cuerpo*/
+
+/*Estructura*/
 main section {
     width:70%;
     margin: 0 auto;
     padding:50px 0;
     overflow:auto;
 }
+
+aside{
+    background-color: #c4c7d7;
+    float:right;
+    padding:10px 2%;
+    width:25%;
+}
+
 main section section {
     width: 69%;
     padding:0;
@@ -154,11 +149,19 @@ section aside article{
     float:none;
 }
 
-
-.ElDeEnMedio{
+.ElDeEnMedio{ /*Esta clase está para los artículos de en medio de las secciones, dan un espacio en los laterales*/
     margin:0 2% 5% 2%;
-    
 }
+
+article input,#Suscribite form input[type=button]{
+    padding:7px;
+    letter-spacing: 2px;
+    background-color:#071a2a;
+    color:#f2f6f5;
+    text-transform:uppercase;
+}
+
+
 main section section footer{
     background-color: #c4c7d7;
     text-align:right;
@@ -223,7 +226,7 @@ footer{
     padding:20px;
 }
 footer p{
-    color:white;
+    color:#dde1e7;
     float:left;
     margin-top:10px;
 } 
