@@ -205,10 +205,15 @@ table{
 
 table th{
     font-size: 18px;
+    background-color:#f2f6f5;
 }
 
 table tr{
     height: 50px;
+    background-color:#e8ecee;
+}
+table tr:nth-child(odd){
+    background-color:#dde1e7;
 }
 
 table td{
