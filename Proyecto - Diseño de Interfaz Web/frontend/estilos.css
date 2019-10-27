@@ -235,12 +235,34 @@ footer p{
     float:left;
     margin-top:10px;
 } 
-footer figure{
+footer ul{
     float:right;
 } 
-footer figure img{
-    width:40px;
-    height:40px;
-    margin-left:15px;
+footer ul li{
+    display:inline-block;
+    margin-left:20px;
+}
+#Face,#Insta,#Tw{
+    background-image:url("../img/sprite.png");
+    background-size: 118px 100px ;
+}
+#Face{
+    background-position:0px -23;
+    
+}
+#Insta{
+    background-position:-82px -23;
+}
+#Tw{
+    background-position:-164px -23;
 }
 
+#Face:hover{
+    background-position:0px -129px;
+}
+#Insta:hover{
+    background-position:-82px -129px;
+}
+#Tw:hover{
+    background-position:-164px -129px;
+}
