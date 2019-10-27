@@ -17,14 +17,20 @@
         <p id="pLogin">Todos los campos son obligatorios</p>
 
         <figure id="figureLogin">
-            <img  id="logoLogin" src="../img/logo2.png">
+            <img  id="logoLogin" src="../img/logo.png">
         </figure>
 
-        <form id="formLogin"> <!-- Preguntar al profe, input adentro de label -->
-            <label>Usuario <input type="text" placeholder="Nombre de usuario"></label>
-            <label>Contraseña <input type="text" placeholder="Contraseña"></label>
-            <label id="checkboxLogin"><input type="checkbox"> Recordar datos</label>
-            <input type="button" id="btnIngresarLogin" value="INGRESAR">
+        <form id="formLogin" action="listado.html"> 
+            <label for="txtUsuario">Usuario </label>
+            <input type="text" id="txtUsuario" placeholder="Nombre de usuario" required>
+
+            <label for="txtContraseña">Contraseña</label>
+            <input type="password" id="txtContraseña" placeholder="Contraseña" required>
+            
+            <input id="checkboxLogin" type="checkbox">
+            <label id="labelCheckbox" for="checkboxLogin"> Recordar datos</label>
+            
+            <input type="submit" id="btnIngresarLogin" value="INGRESAR">
         </form>
     </main>
 </body>

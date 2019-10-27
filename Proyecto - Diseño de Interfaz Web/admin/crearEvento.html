@@ -11,10 +11,10 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="bodyGeneralBackend">
     <header>
         <figure>
-            <img src="../img/logo2.png">
+            <img src="../img/logo.png">
         </figure>
         <form action="index.html">
             <input type="submit" value="SALIR">
@@ -24,16 +24,16 @@
 
     <nav>
         <ul>
-            <li><a href="#">DASHBOARD</a></li> <!-- Preguntar al profe si poner uppercase en todos los casos -->
-            <li><a href="crearEvento.html">CREAR EVENTO</a></li>
-            <li><a href="#" class="active">LISTADO DE EVENTOS</a></li>
+            <li><a href="#">DASHBOARD</a></li>
+            <li><a href="#" class="active">CREAR EVENTO</a></li>
+            <li><a href="listado.html">LISTADO DE EVENTOS</a></li>
             <li><a href="#">REPORTES</a></li>
             <li><a href="#">DESTACADOS</a></li>
             <li><a href="#">AGENTES DE VENTA</a></li>
             <ul>
     </nav>
 
-    <main>
+    <main class="mainGeneralBackend">
         <p>Administrador > Crear Evento</p>
         <h1>LISTADO DE EVENTOS</h1>
         <p>Campos Obligatorios(*)</p>
@@ -43,7 +43,7 @@
             <label>Nombre del evento(*)</label>
             <input type="text">
             <label>Organizador(*)</label>
-            <select><!--Preguntar como meter lo que parece un placeholder-->
+            <select>
                 
             </select>
             <label>Lugar(*)</label>

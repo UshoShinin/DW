@@ -20,20 +20,21 @@ p, label, a {
     font-size: 14px;
 }
 
-input[type=button] {
+input[type=submit] {
     background-color: #071a2a;
     color: #f2f6f5;
-    margin-top: 15px;
+    padding: 4px 20px;
     border: 2px solid #071a2a;
-    transition: 0.3s;
+    transition: 0.3s; 
+    letter-spacing: 4px;   
 }
 
-input[type=button]:hover, input[type=submit]:hover { /* Cuando se para sobre el botón, cambia los colores con una transición */
+input[type=submit]:hover { /* Cuando se para sobre el botón, cambia los colores con una transición */
     background-color: #f2f6f5;
     color: #828588;            
 }
 
-input[type=checkbox], input[type=button], input[type=submit], label {
+input[type=checkbox], input[type=submit], label {
     cursor: pointer;
 }
 
@@ -51,7 +52,7 @@ input[type=checkbox], input[type=button], input[type=submit], label {
 }
 
 #figureLogin { 
-    margin: 0 auto; /* Preguntar al profe */
+    margin: 0 auto;
     margin-top: 16px;
     margin-bottom: 40px;
     width: 120px;
@@ -73,7 +74,7 @@ input[type=checkbox], input[type=button], input[type=submit], label {
 }
 
 /* Estilos de los elementos del formulario */
-input[type=text] {
+#mainLogin input[type=text], #mainLogin input[type=password]{
     text-align: center;
     border: 2px solid #071a2a;
     border-radius: 20px;
@@ -81,17 +82,27 @@ input[type=text] {
     margin: 4px 0 18px 0;
 }
 
-#btnIngresarLogin { 
-    padding: 4px 114px;
-    clear: both;
-}
-
-#checkboxLogin { /* Alinea el checkbox con el resto del formulario */
+#checkboxLogin, #labelCheckbox{ /* Alinea el checkbox con el resto del formulario */
     float: left;        
 }
 
+#btnIngresarLogin {     
+    margin-top: 25px;
+    padding: 4px 98px;
+    clear: both;
+}
+
+#checkboxLogin{
+    margin-top: 3px;
+}
+
+
 
 /* 3 - Estilos en comun de listado.html y crear.html */
+.bodyGeneralBackend{
+    overflow: auto;
+}
+
 header{
     padding: 2% 2% 0 2%;
     border-bottom: 8px solid #071a2a;
@@ -118,25 +129,16 @@ header p{
     margin-right: 10px;
 }
 
-input[type=submit] {
-    background-color: #071a2a;
-    color: #f2f6f5;
-    padding: 4px 20px;
-    border: 2px solid #071a2a;
-    transition: 0.3s; 
-    letter-spacing: 4px;   
-}
-
 header input[type=submit]{
     margin-top: 30px;
 }
 
 nav {
+    float: left;
     width: 15%;
     background-color: #dde1e7;
     padding-top: 6px;
-    height: 100%;
-    position: absolute;
+    height: 1080px;
 }
 
 nav ul li a {
@@ -149,45 +151,48 @@ nav ul li a {
     transition: 0.4s; 
 }
 
-nav ul li a:hover{
+nav ul li a:hover, nav ul li .active{
     background-color: #c4c7d7;
 }
 
-nav ul li .active {
-    background-color: #c4c7d7;
+.mainGeneralBackend {
+    float: left;
+    width: 78.5%;
+    margin-left: 3%;
+    margin-top: 3%;
 }
 
-main {
-    padding-left: 17%;
-    padding-top: 2%;
-    padding-right: 2%;
-}
-
-main h1{
+.mainGeneralBackend h1{
     margin: 12px 0;
 }
 
 
 
 /*4 - Estilos de listado.html*/
-main #filtrador{
-    overflow: auto;
+.mainGeneralBackend section input[type=submit]{
+    float: left;
 }
 
-main #filtrador input[type=text]{
-    width: 180px;
-    padding: 8px 20px 8px 16px;
+.mainGeneralBackend section input[type=text]{
+    width: 120px;
+    padding: 8px 16px 8px 80px;
+    margin-top: 10px;
     background-image: url("../img/iconoBuscar.png");
     background-repeat: no-repeat;
     background-size: contain;
     border: 2px solid #071a2a;
-    border-radius: 20px;    
-    text-align: center;
-    float: right;
+    border-radius: 20px; 
+    float: right;   
+}
+
+.mainGeneralBackend section{
+    overflow: auto;
 }
 
 table{
+    margin-top: 20px;
     width: 100%;
+    border-collapse: collapse;
 }
 
 table th{
@@ -199,6 +204,7 @@ table tr{
     height: 50px;
     background-color:#e8ecee;
 }
+
 table tr:nth-child(odd){
     background-color:#dde1e7;
 }
@@ -208,8 +214,45 @@ table td{
     font-size: 14px;
 }
 
-/*Preguntar al profe por el boton del formulario */
+.tablaImgCentral{
+    margin: 0 40px;
+}
 
+table img{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+table .tablaImgRectangular{
+    width: 18px;
+    height: 25px;
+}
+
+.mainGeneralBackend #paginasTabla{
+    margin-top: 20px;
+    letter-spacing: 4px;
+    float: right;
+}
+
+.mainGeneralBackend #paginasTabla span{
+    background-color: #071a2a;
+    color: #f2f6f5;
+    padding: 4px 1px 1px 12px;    
+}
+
+.mainGeneralBackend figure{
+    margin-left: 4px;
+    margin-top: 18px;
+    height: 20px;
+    width: 20px;
+    float: right;
+}
+
+.mainGeneralBackend figure img{
+    height: 100%;
+    width: 100%;
+}
 /* 
 background-color: #c4c7d7; color hover en elemento del nav
 background-color: #dde1e7; color de fondo del nav
