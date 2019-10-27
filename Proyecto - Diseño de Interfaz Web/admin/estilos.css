@@ -34,10 +34,14 @@ input[type=submit]:hover { /* Cuando se para sobre el botón, cambia los colores
     color: #828588;            
 }
 
-input[type=checkbox], input[type=submit], label {
+input[type=checkbox], input[type=radio], input[type=submit], label {
     cursor: pointer;
 }
 
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, input[type=date]:focus, input[type=time]:focus, select:focus{
+    transition: 0.4s;    
+    background-color: #dde1e7;
+}
 
 
 /* 2 - Estilos login.html */
@@ -138,7 +142,7 @@ nav {
     width: 15%;
     background-color: #dde1e7;
     padding-top: 6px;
-    height: 1080px;
+    height: 1000px;
 }
 
 nav ul li a {
@@ -169,11 +173,11 @@ nav ul li a:hover, nav ul li .active{
 
 
 /*4 - Estilos de listado.html*/
-.mainGeneralBackend section input[type=submit]{
+.mainGeneralBackend section form input[type=submit]{
     float: left;
 }
 
-.mainGeneralBackend section input[type=text]{
+.mainGeneralBackend section #filtrador input[type=text]{
     width: 120px;
     padding: 8px 16px 8px 80px;
     margin-top: 10px;
@@ -214,34 +218,48 @@ table td{
     font-size: 14px;
 }
 
-.tablaImgCentral{
-    margin: 0 40px;
+table ul li{
+    list-style: none;
+    display: inline-block;
 }
 
 table img{
-    width: 25px;
-    height: 25px;
     cursor: pointer;
 }
 
-table .tablaImgRectangular{
-    width: 18px;
-    height: 25px;
+.funcionEditar, .funcionDuplicar, .funcionEliminar{
+    background-image: url("../img/sprite.png");
 }
 
-.mainGeneralBackend #paginasTabla{
+.funcionEditar{
+    background-position: -35px 0px;;
+    background-size: 182px 182px;
+}
+
+.funcionDuplicar{
+    background-position: 3px 0px;
+    background-size: 182px 182px;
+    margin: 0 40px;
+}
+
+.funcionEliminar{
+    background-position: -65px 0px;
+    background-size: 182px 182px;
+}
+
+#paginasTabla{
     margin-top: 20px;
     letter-spacing: 4px;
     float: right;
 }
 
-.mainGeneralBackend #paginasTabla span{
+#paginasTabla span{
     background-color: #071a2a;
     color: #f2f6f5;
     padding: 4px 1px 1px 12px;    
 }
 
-.mainGeneralBackend figure{
+#flechaDerecha{
     margin-left: 4px;
     margin-top: 18px;
     height: 20px;
@@ -249,11 +267,86 @@ table .tablaImgRectangular{
     float: right;
 }
 
-.mainGeneralBackend figure img{
+#flechaDerecha img{
     height: 100%;
     width: 100%;
+    cursor: pointer;
 }
-/* 
-background-color: #c4c7d7; color hover en elemento del nav
-background-color: #dde1e7; color de fondo del nav
-*/
+
+
+
+/* 5 - Estilos de crearEvento.html */
+.mainGeneralBackend #formularioEventos, #logoGrande{
+    display: inline-block;
+}
+
+#logoGrande{
+    width: 340px;
+    height: 395px;
+    margin-left: 260px;
+}
+
+#logoGrande img{
+    width: 100%;
+    height: 100%;
+}
+
+#pReferencia{
+    margin-bottom: 20px;
+}
+
+.mainGeneralBackend #formularioEventos{
+    overflow: auto;
+}
+
+.mainGeneralBackend #izquierdaForm{
+    width: 380px;
+    margin-right: 20px;
+    float: left;
+}
+
+.mainGeneralBackend #derechaForm{
+    width: 150px;
+    float: left;
+}
+
+.mainGeneralBackend form input, select, .labelDisplayBlock{
+    display: block;
+}
+
+.mainGeneralBackend form .inputDisplayInline{
+    display: inline-block;
+}
+
+.mainGeneralBackend form fieldset input, select{
+    margin-bottom: 20px;
+}
+
+select{
+    width: 339px; /* El ancho del select está aparte, porque, al incluirle la clase anchoCompleto, quedaba más chico que los demás campos */
+}
+
+.anchoCompleto{
+    width: 85%;
+}
+
+.campo{
+    padding: 6px;
+    border: 2px solid #071a2a;
+}
+
+#lbDia{
+    margin-right: 138px;
+}
+
+#dtDia, #tmHora{
+    width: 140px;    
+}
+
+#dtDia{
+    margin-right: 23px;
+}
+
+#rbtNo{
+    margin-left: 10px;
+}

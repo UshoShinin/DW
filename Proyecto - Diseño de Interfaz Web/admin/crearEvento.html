@@ -35,22 +35,55 @@
 
     <main class="mainGeneralBackend">
         <p>Administrador > Crear Evento</p>
-        <h1>LISTADO DE EVENTOS</h1>
-        <p>Campos Obligatorios(*)</p>
-        <form>
-        <fieldset>
-        
-            <label>Nombre del evento(*)</label>
-            <input type="text">
-            <label>Organizador(*)</label>
-            <select>
-                
-            </select>
-            <label>Lugar(*)</label>
-            <input type="text">
-        
-        </fieldset>
+        <h1>CREAR EVENTO</h1>
+        <p id="pReferencia">Campos Obligatorios (*)</p>
+
+        <form id="formularioEventos" action="listado.html">
+            <fieldset id="izquierdaForm">
+                <label for="txtNombreEvento">Nombre del evento (*)</label>
+                <input class="anchoCompleto campo" id="txtNombreEvento" type="text" required>
+
+                <label>Organizador(*)</label>
+                <select class="campo">
+                    <option>Ingrese una opción</option>
+                </select>
+
+                <label for="txtLugar">Lugar (*)</label>
+                <input class="anchoCompleto campo" id="txtLugar" type="text" required>
+
+                <label id="lbDia" for="dtDia">Día (*)</label>
+                <label for="tmHora">Hora (*)</label>
+                <input class="inputDisplayInline campo" id="dtDia" type="date" required>
+                <input class="inputDisplayInline campo" id="tmHora" type="time" required>
+
+                <label class="labelDisplayBlock" for="flImagen">Imagen</label>
+                <input class="anchoCompleto" id="flImagen" type="file">
+
+                <input id="btnIngresar" type="submit" value="INGRESAR">
+            </fieldset>
+
+            <fieldset id="derechaForm">
+                <input class="inputDisplayInline" id="chkDestacar" type="checkbox">
+                <label for="chkDestacar"> Destacar</label>
+
+                <label class="labelDisplayBlock" for="nmbPrecio1">Precio 1 (*)</label>
+                <input class="anchoCompleto campo" id="nmbPrecio1" type="number" required>
+
+                <label for="nmbPrecio2">Precio 2</label>
+                <input class="anchoCompleto campo" id="nmbPrecio2" type="number">
+
+                <label for="nmbPrecio3">Precio 3</label>
+                <input class="anchoCompleto campo" id="nmbPrecio3" type="number">
+
+                <p>Más precios</p>
+                <input class="inputDisplayInline" id="rbtSi" type="radio" name="MasPrecios">
+                <label for="rbtSi">Sí</label>
+                <input class="inputDisplayInline" id="rbtNo" type="radio" name="MasPrecios">
+                <label for="rbtNo">No</label>
+            </fieldset>
         </form>
+
+        <figure id="logoGrande"><img src="../img/logo.png"></figure>
     </main>
 </body>
 
