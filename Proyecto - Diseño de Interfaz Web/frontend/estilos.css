@@ -228,7 +228,7 @@ footer{
     background-color:#071a2a;
     clear:both;
     overflow:auto;
-    padding:20px;
+    padding:20px 15%;
 }
 footer p{
     color:#dde1e7;
@@ -247,22 +247,22 @@ footer ul li{
     background-size: 118px 100px ;
 }
 #Face{
-    background-position:0px -23;
+    background-position:0px -23.5px;
     
 }
 #Insta{
-    background-position:-82px -23;
+    background-position:-82px -24px;
 }
 #Tw{
-    background-position:-164px -23;
+    background-position:-159px -24px;
 }
 
 #Face:hover{
-    background-position:0px -129px;
+    background-position:0px -64px;
 }
 #Insta:hover{
-    background-position:-82px -129px;
+    background-position:-82px -64px;
 }
 #Tw:hover{
-    background-position:-164px -129px;
+    background-position:-159px -64px;
 }
