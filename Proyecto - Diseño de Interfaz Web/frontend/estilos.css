@@ -147,7 +147,7 @@ main section section {
     width: 69%;
     padding:0;
     float:left;
-    margin-bottom:3.5%;
+    margin-bottom:1.5%;
 }
 
 main section section section{
@@ -158,7 +158,7 @@ main section section section{
 main section section article{
     width:32%;
     float:left;
-    margin-bottom:5%;
+    margin-bottom:3.5%;
 }
 
 section aside article{
@@ -168,7 +168,7 @@ section aside article{
 }
 
 .ElDeEnMedio{ /*Esta clase está para los artículos de en medio de las secciones, dan un espacio en los laterales*/
-    margin:0 2% 5% 2%;
+    margin:0 2% 3.5% 2%;
 }
 
 main section section footer{
