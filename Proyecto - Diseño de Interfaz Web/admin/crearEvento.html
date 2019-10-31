@@ -11,15 +11,15 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 
-<body class="bodyGeneralBackend">
+<body>
     <header>
         <figure>
             <img src="../img/logo.png">
         </figure>
         <form action="index.html">
-            <input type="submit" value="SALIR">
+            <input type="submit" value="SALIR" name="cerrarSesion">
         </form>
-        <p>Hola, <strong>Nombre de Usuario</strong></p>
+        <p>Hola, <strong>Robertooooooooo</strong></p>
     </header>
 
     <nav>
@@ -41,7 +41,7 @@
         <form id="formularioEventos" action="listado.html">
             <fieldset id="izquierdaForm">
                 <label for="txtNombreEvento">Nombre del evento (*)</label>
-                <input class="anchoCompleto campo" id="txtNombreEvento" type="text" required>
+                <input class="anchoCompleto campo" id="txtNombreEvento" type="text" name="nombreEvento" required>
 
                 <label>Organizador(*)</label>
                 <select class="campo">
@@ -49,31 +49,31 @@
                 </select>
 
                 <label for="txtLugar">Lugar (*)</label>
-                <input class="anchoCompleto campo" id="txtLugar" type="text" required>
+                <input class="anchoCompleto campo" id="txtLugar" type="text" name="lugarEvento" required>
 
                 <label id="lbDia" for="dtDia">Día (*)</label>
                 <label for="tmHora">Hora (*)</label>
-                <input class="inputDisplayInline campo" id="dtDia" type="date" required>
-                <input class="inputDisplayInline campo" id="tmHora" type="time" required>
+                <input class="inputDisplayInline campo" id="dtDia" type="date" name="fechaEvento" required>
+                <input class="inputDisplayInline campo" id="tmHora" type="time" name="horaEvento" required>
 
                 <label class="labelDisplayBlock" for="flImagen">Imagen</label>
-                <input class="anchoCompleto" id="flImagen" type="file">
+                <input class="anchoCompleto" id="flImagen" type="file" name="imagenEvento">
 
-                <input id="btnIngresar" type="submit" value="INGRESAR">
+                <input id="btnIngresar" type="submit" value="INGRESAR" name="ingresarEvento">
             </fieldset>
 
             <fieldset id="derechaForm">
-                <input class="inputDisplayInline" id="chkDestacar" type="checkbox">
+                <input class="inputDisplayInline" id="chkDestacar" type="checkbox" name="destacarEvento">
                 <label for="chkDestacar"> Destacar</label>
 
                 <label class="labelDisplayBlock" for="nmbPrecio1">Precio 1 (*)</label>
-                <input class="anchoCompleto campo" id="nmbPrecio1" type="number" required>
+                <input class="anchoCompleto campo" id="nmbPrecio1" type="number" name="precio1Evento" required> 
 
                 <label for="nmbPrecio2">Precio 2</label>
-                <input class="anchoCompleto campo" id="nmbPrecio2" type="number">
+                <input class="anchoCompleto campo" id="nmbPrecio2" type="number" name="precio2Evento">
 
                 <label for="nmbPrecio3">Precio 3</label>
-                <input class="anchoCompleto campo" id="nmbPrecio3" type="number">
+                <input class="anchoCompleto campo" id="nmbPrecio3" type="number" name="precio3Evento">
 
                 <p>Más precios</p>
                 <input class="inputDisplayInline" id="rbtSi" type="radio" name="MasPrecios">

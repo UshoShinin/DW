@@ -6,9 +6,14 @@
     font-family: Quicksand, sans-serif;
 }
 
+html{
+    height: 100%;
+}
+
 body { 
     background-color: #f2f6f5;
     color: #071a2a;
+    height: 100%;
 }
 
 h1 {
@@ -60,7 +65,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, in
     margin-top: 16px;
     margin-bottom: 40px;
     width: 120px;
-    height: 120px;
+    height: 140px;
 }
 
 #logoLogin {
@@ -103,10 +108,6 @@ input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, in
 
 
 /* 3 - Estilos en comun de listado.html y crear.html */
-.bodyGeneralBackend{
-    overflow: auto;
-}
-
 header{
     padding: 2% 2% 0 2%;
     border-bottom: 8px solid #071a2a;
@@ -115,7 +116,7 @@ header{
 
 header figure{
     width: 100px;
-    height: 100px;
+    height: 116px;
     float: left;
 }
 
@@ -142,7 +143,7 @@ nav {
     width: 15%;
     background-color: #dde1e7;
     padding-top: 6px;
-    height: 1000px;
+    height: 100%;
 }
 
 nav ul li a {
@@ -160,10 +161,10 @@ nav ul li a:hover, nav ul li .active{
 }
 
 .mainGeneralBackend {
-    float: left;
     width: 78.5%;
     margin-left: 3%;
     margin-top: 3%;
+    float: left;
 }
 
 .mainGeneralBackend h1{
@@ -229,22 +230,20 @@ table img{
 
 .funcionEditar, .funcionDuplicar, .funcionEliminar{
     background-image: url("../img/sprite.png");
+    background-size: 215px 182px;
 }
 
 .funcionEditar{
-    background-position: -35px 0px;;
-    background-size: 182px 182px;
+    background-position: -42px 0px;
 }
 
 .funcionDuplicar{
-    background-position: 3px 0px;
-    background-size: 182px 182px;
+    background-position: 0px 0px;
     margin: 0 40px;
 }
 
 .funcionEliminar{
-    background-position: -65px 0px;
-    background-size: 182px 182px;
+    background-position: -85px 0px;
 }
 
 #paginasTabla{
@@ -276,14 +275,13 @@ table img{
 
 
 /* 5 - Estilos de crearEvento.html */
-.mainGeneralBackend #formularioEventos, #logoGrande{
+#formularioEventos, #logoGrande{
     display: inline-block;
 }
 
 #logoGrande{
-    width: 340px;
-    height: 395px;
-    margin-left: 260px;
+    width: 22.80%;
+    margin-left: 18.75%;
 }
 
 #logoGrande img{

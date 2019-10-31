@@ -22,15 +22,15 @@
 
         <form id="formLogin" action="crearEvento.html">
             <label for="txtUsuario">Usuario </label>
-            <input type="text" id="txtUsuario" placeholder="Nombre de usuario" required>
+            <input type="text" id="txtUsuario" placeholder="Nombre de usuario" name="nombreUsuario" required>
 
             <label for="txtContraseña">Contraseña</label>
-            <input type="password" id="txtContraseña" placeholder="Contraseña" required>
+            <input type="password" id="txtContraseña" placeholder="Contraseña" name="contraseña" required>
 
-            <input id="checkboxLogin" type="checkbox">
+            <input id="checkboxLogin" type="checkbox" name="recordarDatos">
             <label id="labelCheckbox" for="checkboxLogin"> Recordar datos</label>
 
-            <input type="submit" id="btnIngresarLogin" value="INGRESAR">
+            <input type="submit" id="btnIngresarLogin" value="INGRESAR" name="ingresarAdmin">
         </form>
     </main>
 </body>
