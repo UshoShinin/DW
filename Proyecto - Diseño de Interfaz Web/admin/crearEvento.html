@@ -19,13 +19,13 @@
         <form action="index.html">
             <input type="submit" value="SALIR" name="cerrarSesion">
         </form>
-        <p>Hola, <strong>Robertooooooooo</strong></p>
+        <p>Hola, <strong>Roberto</strong></p>
     </header>
 
     <nav>
         <ul>
             <li><a href="#">DASHBOARD</a></li>
-            <li><a href="#" class="active">CREAR EVENTO</a></li>
+            <li><a href="#">CREAR EVENTO</a></li>
             <li><a href="listado.html">LISTADO DE EVENTOS</a></li>
             <li><a href="#">REPORTES</a></li>
             <li><a href="#">DESTACADOS</a></li>
@@ -38,14 +38,23 @@
         <h1>CREAR EVENTO</h1>
         <p id="pReferencia">Campos Obligatorios (*)</p>
 
-        <form id="formularioEventos" action="listado.html">
-            <fieldset id="izquierdaForm">
+        <form id="formularioEventos" action="listado.html"> <!-- Formulario para crear eventos dividido en dos fieldset con display inline-block -->
+            <fieldset id="izquierdaForm"> <!-- Fieldset de la izquierda con float left -->
                 <label for="txtNombreEvento">Nombre del evento (*)</label>
                 <input class="anchoCompleto campo" id="txtNombreEvento" type="text" name="nombreEvento" required>
 
                 <label>Organizador(*)</label>
                 <select class="campo">
-                    <option>Ingrese una opción</option>
+                    <option>Teodoro Rosell</option>
+                    <option>David Guerrero</option>
+                    <option>Alvin Figueroa</option>
+                    <option>Ibai Llanos</option>
+                    <option>Francisco Casal</option>
+                    <option>Javier Bouza</option>
+                    <option>Leandro Cortez</option>
+                    <option>Ignacio Alonso</option>
+                    <option>Daniel César</option>
+                    <option>Fernando Aguirre</option>
                 </select>
 
                 <label for="txtLugar">Lugar (*)</label>
@@ -62,7 +71,7 @@
                 <input id="btnIngresar" type="submit" value="INGRESAR" name="ingresarEvento">
             </fieldset>
 
-            <fieldset id="derechaForm">
+            <fieldset id="derechaForm"> <!-- Fieldset de la derecha con float left -->
                 <input class="inputDisplayInline" id="chkDestacar" type="checkbox" name="destacarEvento">
                 <label for="chkDestacar"> Destacar</label>
 
@@ -83,7 +92,7 @@
             </fieldset>
         </form>
 
-        <figure id="logoGrande"><img src="../img/logo.png" title="Logotipo Grande" alt="Logotipo grande de un puño sosteniendo un ticket"></figure>
+        <figure id="logoGrande"><img src="../img/logo.png" title="Logotipo Grande" alt="Logotipo grande de un puño sosteniendo un ticket"></figure> <!-- Logotipo con display inline-block -->
     </main>
 </body>
 

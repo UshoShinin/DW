@@ -156,7 +156,7 @@ nav ul li a {
     transition: 0.4s; 
 }
 
-nav ul li a:hover, nav ul li .active{
+nav ul li a:hover{
     background-color: #c4c7d7;
 }
 
