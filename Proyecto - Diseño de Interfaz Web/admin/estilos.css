@@ -39,7 +39,7 @@ input[type=submit]:hover { /* Cuando se para sobre el botón, cambia los colores
     color: #828588;            
 }
 
-input[type=checkbox], input[type=radio], input[type=submit], label {
+input[type=checkbox], input[type=radio], input[type=submit], input[type=file], input[type=button], label, select {
     cursor: pointer;
 }
 
